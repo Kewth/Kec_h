@@ -27,3 +27,10 @@ START = 0; // 程序（主函数）开始处，=0 是程序返回值的初始值
 	output _o argv; // argv 表示主函数参数数量，主函数参数为 argc
 endfunc // 函数结束，返回值 res
 ```
+
+内置的数据类型：  
+- int: 即int
+- long: 即long long
+- char: 即char
+- bignumber: 即__int128
+- str: 即 std::string
