@@ -29,9 +29,9 @@ START = 0; // START 是程序（主函数）开始处，=0 是程序返回值的
 		output "hello" _o "world!"; // 用 _o 连接多个输出，自动以空格隔开
 		res = 0; // res 表示函数返回值，此处是程序返回值
 	ELIF testtyp == 1 then // 用 ELIF 表示下一个条件语句，同用 then 表示开始
-		call(test()); // call() 调用函数
+		test(); 
 	ELIF testtyp == 2 then // ELSE 表示分支“否则”
-		output call(sum(1,2));
+		output sum(1,2);
 	ELSE
 		pass // pass 表示待完成的地方 (python)
 	FI

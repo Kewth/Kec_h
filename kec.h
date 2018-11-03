@@ -29,7 +29,6 @@ typedef std::string C_str;
 #define linedef(typ, name) \
 	inline typ name { typ res; return res
 #define START int main(int argv, char **args) { int res
-#define call(func) func
 
 // class {{{2
 #define CLASS(name) \
