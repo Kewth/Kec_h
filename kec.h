@@ -1,23 +1,25 @@
-// include files {{{1
+// include files {{{2
 #include <bits/stdc++.h>
 
-// {{{1
+// if {{{2
 #define IF if(
 #define ELIF } else if(
 #define ELSE } else {
 #define pass ;;;
 
-// TYPE {{{1
+// TYPE {{{2
 typedef int C_int;
 typedef void C_void;
 typedef long long C_long;
 typedef char C_char;
-typedef __int128 C_bignumber;
+// typedef __int128 C_bignumber;
 typedef std::string C_str;
 
-// function {{{1
+// function {{{2
 #define def(typ, name) \
 	C_##typ F_##name { C_##typ res
+#define dec(typ, name) \
+	C_##typ F_##name;
 #define voidef(name) \
 	C_void F_##name {
 #define linedef(typ, name) \
@@ -25,26 +27,34 @@ typedef std::string C_str;
 #define START C_int main(C_int argv, C_char **args) { C_int res
 #define call(func) F_##func
 
-// class {{{1
+// class {{{2
 #define CLASS(name) \
 	class C_##name {
 
-// brackets {{{1
+// brackets {{{2
 #define then ) {
-#define begin {
-#define endfunc return res; }
-#define end };
+#define BEGIN {
+#define ENDF return res; }
+#define END };
 #define quit return res
 #define FI }
+#define JUST )
 
-// value {{{1
+// value {{{2
 #define var auto
-#define varr(typ) C_##typ
+#define va(typ) C_##typ
 
-// input and output {{{1
-#define input std::cin
-#define output std::cout
+// while {{{2
+#define WHI while ((
+#define UNT while (!(
+#define LE )) {
+#define FOR(in) for(C_##in) {
+#define IFOR(in) for(C_##in
+
+// input and output {{{2
+#define input std::cin >>
+#define output std::cout <<
 #define _o <<
 #define _i >>
+#define _os << ' ' <<
 
-// }}}1
